@@ -32,7 +32,6 @@ for k, g in groupby(enumerate(d), lambda x: x[0]-x[1]):
     group = (map(itemgetter(1), g))
     group = list(map(int, group))
     ranges.append((group[0], group[-1]))
-print(ranges)
 
 if len(seq1) >= len(seq2):
     image_len = len(seq1)
